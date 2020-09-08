@@ -13,15 +13,15 @@ class UsernameForm extends Component {
     }
 
     handleSubmit = (e) => {
-        e.preventDefault;
-        this.props.onSubmit(this.props.username)
+        e.preventDefault();
+        console.log(this.state.username)
     }
 
     render() {
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
-                    <input type="text" placeholder="Username" onChange={this.handleChange}/>
+                    <input type="text" name="username" placeholder="Username" onChange={this.handleChange}/>
                     <input type="submit"/>
                 </form>
             </div>
