@@ -12,11 +12,16 @@ class UsernameForm extends Component {
         })
     }
 
+    handleSubmit = (e) => {
+        e.preventDefault;
+        this.props.onSubmit(this.props.username)
+    }
+
     render() {
         return (
             <div>
-                <form>
-                    <input type="text" onChange={this.handleChange}/>
+                <form onSubmit={this.handleSubmit}>
+                    <input type="text" placeholder="Username" onChange={this.handleChange}/>
                     <input type="submit"/>
                 </form>
             </div>
@@ -24,4 +29,4 @@ class UsernameForm extends Component {
     }
 }
 
-export default UsernameForm
+export default UsernameForm;
