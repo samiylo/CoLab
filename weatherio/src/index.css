@@ -16,3 +16,9 @@ code {
   background-color: cadetblue;
   height: 60px;
 }
+
+.MainBody {
+  background-color: #09494a;
+  height: 800px;
+  color: white;
+}

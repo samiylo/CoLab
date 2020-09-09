@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class ScanFile extends Component {
     render() {
         return (
-            <div>
+            <div className="ScanFile">
                 Scan File
             </div>
         )

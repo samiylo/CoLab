@@ -1,13 +1,13 @@
 import React from 'react';
-import ScanFile from './components/ScanFile'
 import Nav from './containers/NavBar'
+import MainBody from './containers/MainBody'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <Nav />
-      <ScanFile />
+      <MainBody />
     </div>
   );
 }
