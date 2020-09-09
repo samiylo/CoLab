@@ -4,7 +4,7 @@ export default class NavBar extends Component {
     render() {
         return (
             <div className="Nav">
-                Cloud Scanner
+                CoLab
             </div>
         )
     }

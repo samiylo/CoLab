@@ -19,6 +19,22 @@ code {
 
 .MainBody {
   background-color: #09494a;
+  align-items: center;
+  justify-content: center;
   height: 800px;
   color: white;
+}
+
+.ScanFile {
+  display: inline;
+  background-color: teal;
+  padding: 5px;
+  margin: 20px;
+}
+
+.ScanUrl {
+  display: inline;
+  background-color: teal;
+  padding: 5px;
+  margin: 20px;
 }
