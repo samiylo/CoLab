@@ -1,1 +1,3 @@
-CoLab is a application that is used for sending and recieving messages and files. 
+WeatherIo is a interactive weather tracking bot.
+
+WeatherIo is created using ReactJS/JavaScript, HTML, CSS, and AJAx async.
