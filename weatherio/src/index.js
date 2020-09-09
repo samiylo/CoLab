@@ -1,21 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import thunk from 'redux-thunk';
 import { createStore, applyMiddleware, compose } from 'redux'; //compose combines different middleware.
-// import thunk from 'redux-thunk';
 import { Provider } from 'react-redux'; 
 import { BrowserRouter as Router } from 'react-router-dom'
 import './index.css';
 import App from './App';
+import UrlReducer from './reducers/UrlReducer'
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
+let store = createStore( UrlReducer, composeEnhancer(applyMiddleware(thunk)))
 
 
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <Router >
+      <App />,
+    </Router>,
+  </Provider>,
+
   document.getElementById('root')
 );
 
