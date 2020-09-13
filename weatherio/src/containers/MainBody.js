@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ScanFile from '../components/ScanFile';
 import ScanUrl from '../components/ScanUrl';
-import ScanForm from '../components/ScanForm';
+import FileForm from '../components/FileForm';
 import {Route, Switch} from 'react-router-dom';
 
 export default class MainBody extends Component {
@@ -10,7 +10,7 @@ export default class MainBody extends Component {
             <div className="MainBody">
                     <ScanFile />
                     <ScanUrl />
-                    <ScanForm />
+                    <FileForm />
             </div>
         )
     }

@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 
-export default class ScanForm extends Component {
+export default class FileForm extends Component {
 
-    handleSubmit = () => {
+    handleSubmit = (e) => {
+        e.preventDefault();
         console.log("Form Submited")
     }
     render() {
