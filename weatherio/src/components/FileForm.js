@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
+import ScanFile from '../actions/ScanFile'
+import { connect } from 'react-redux';
 
-export default class FileForm extends Component {
+class FileForm extends Component {
 
     state = {
         file: ''
@@ -30,3 +32,4 @@ export default class FileForm extends Component {
     }
 }
 
+export default connect(null, {ScanFile}) (FileForm);
