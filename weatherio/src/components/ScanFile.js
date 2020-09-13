@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class ScanFile extends Component {
 
     handleClick = () => {
-        console.log('button clicked')
+        console.log('Scan File button')
     }
     render() {
         return (

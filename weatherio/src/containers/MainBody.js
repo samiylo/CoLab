@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ScanFile from '../components/ScanFile';
-import ScanUrl from './ScanUrl';
+import ScanUrl from '../components/ScanUrl'
 import {Route, Switch} from 'react-router-dom';
 
 export default class MainBody extends Component {
