@@ -18,7 +18,9 @@ class UrlForm extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        console.log("Form Submited")
+
+        this.props.ScanUrl(this.state.URL)
+        console.log(this.props)
     }
 
     render() {
