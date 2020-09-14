@@ -1,6 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import ScanUrl from '../actions/ScanUrl'
 
-export default class UrlForm extends Component {
+class UrlForm extends Component {
 
     state = {
         URL: ''
@@ -32,3 +34,5 @@ export default class UrlForm extends Component {
         )
     }
 }
+
+export default connect(null, {ScanUrl}) (UrlForm)
