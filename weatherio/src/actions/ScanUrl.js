@@ -9,6 +9,6 @@ export default function (url) {
             body: JSON.stringify(url)
         })
         .then(response => response.json())
-        .then(status =>  dispatch({type: 'SCAN URL', payload: status}))
+        .then(res => console.log(res))
     }
 }
