@@ -9,6 +9,6 @@ export default function (url) {
             body: JSON.stringify(url)
         })
         .then(response => response.json())
-        .then(company =>  dispatch({type: 'ADD_APPLICATION', payload: company}))
+        .then(status =>  dispatch({type: 'SCAN URL', payload: status}))
     }
 }
