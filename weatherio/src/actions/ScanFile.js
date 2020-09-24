@@ -1,6 +1,6 @@
 export default function ScanFile(file){
     return (dispatch) => {
-        fetch('https://safebrowsing.googleapis.com/v4/threatLists?key=AIzaSyAeF4FccVzvriwriD7pI__faA7_lh1zGdQ HTTP/1.1', {
+        fetch('https://safebrowsing.googleapis.com/v4/threatLists?key=AIzaSyAeF4FccVzvriwriD7pI__faA7_lh1zGdQ', {
             method: 'GET',
             headers: {
                 'Content-Type' : 'application/json'
