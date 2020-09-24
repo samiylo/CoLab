@@ -1,9 +1,11 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import ScanFileAction from '../actions/ScanFile';
+import {connect} from 'react-redux';
 
-export default class ScanFile extends Component {
+class ScanFile extends Component {
 
     handleClick = () => {
-        console.log('Scan File Clicked')
+        this.props.ScanFileAction()
     }
     render() {
         return (
@@ -14,3 +16,5 @@ export default class ScanFile extends Component {
     }
 }
 
+
+export default connect(null, {ScanFileAction})(ScanFile)

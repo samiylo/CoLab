@@ -1,12 +1,14 @@
 export default function ScanFile(file){
     return (dispatch) => {
-        fetch('https://www.virustotal.com/vtapi/v2/file/scan', {
-            method: 'POST',
+        fetch('https://safebrowsing.googleapis.com/v4/threatLists?key=AIzaSyAeF4FccVzvriwriD7pI__faA7_lh1zGdQ HTTP/1.1', {
+            method: 'GET',
             headers: {
                 'Content-Type' : 'application/json'
             },
             body: JSON.stringify(file)
         })
+        .then(res => res.json())
+        .then(data => console.log(data))
 
     }
 }
