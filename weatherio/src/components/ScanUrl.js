@@ -1,9 +1,11 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import ScanUrlAction from '../actions/ScanUrl';
 
-export default class ScanUrl extends Component {
+class ScanUrl extends Component {
 
     handleClick = () => {
-        console.log('Scan URL button')
+        this.props.ScanUrlAction()
     }
     
     render() {
@@ -14,3 +16,5 @@ export default class ScanUrl extends Component {
         )
     }
 }
+
+export default connect(null, { ScanUrlAction } )(ScanUrl)
