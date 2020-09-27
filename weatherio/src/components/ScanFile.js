@@ -4,6 +4,10 @@ import {connect} from 'react-redux';
 
 class ScanFile extends Component {
 
+    state = {
+        
+    }
+
     handleClick = () => {
         this.props.ScanFileAction()
     }

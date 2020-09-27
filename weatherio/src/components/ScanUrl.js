@@ -4,6 +4,10 @@ import ScanUrlAction from '../actions/ScanUrl';
 
 class ScanUrl extends Component {
 
+    state = {
+        
+    }
+
     handleClick = () => {
         this.props.ScanUrlAction()
     }
